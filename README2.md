@@ -1,79 +1,48 @@
 # Telco Customer Churn Prediction
 
-A machine learning project that predicts whether a telecom customer is likely to churn.
+A Machine Learning project that predicts whether a telecom customer is likely to churn.
 
-## Project Overview
+## 🚀 Live Demo
 
-Customer churn is an important business problem for telecom companies. The goal of this project is to analyze customer data and build classification models that can identify customers who are likely to leave the company.
+[![Open Streamlit App](https://img.shields.io/badge/Live%20Demo-Streamlit-red?logo=streamlit)](https://telco-customer-churn-prediction-wxwmqylcqyj9ygstncgu5a.streamlit.app/)
 
-## Dataset
+**Try the application:**
+https://telco-customer-churn-prediction-wxwmqylcqyj9ygstncgu5a.streamlit.app/
 
-The dataset contains customer information such as:
+## 📌 Project Overview
 
-* Customer demographics
-* Tenure
-* Contract type
-* Internet services
-* Monthly charges
-* Total charges
-* Churn status
+This project uses Machine Learning to predict customer churn based on customer information such as tenure, contract type, monthly charges, payment method, and other service-related features.
 
-## Machine Learning Workflow
+## 🤖 Best Model
 
-* Data Cleaning
-* Exploratory Data Analysis (EDA)
-* Categorical Encoding
-* Train/Test Split
-* Feature Scaling
-* Feature Selection
-* Logistic Regression
-* K-Nearest Neighbors (KNN)
-* Support Vector Machine (SVM)
-* Cross-Validation
-* Class Imbalance Handling
-* Confusion Matrix
-* ROC-AUC Evaluation
-* Model Comparison
+**Balanced Logistic Regression**
 
-## Models
-
-Three main classification algorithms were evaluated:
-
-* Logistic Regression
-* KNN
-* SVM
-
-A balanced version of Logistic Regression was also tested using `class_weight="balanced"` to improve detection of churned customers.
-
-## Results
-
-| Model                        | Churn Recall |
-| ---------------------------- | -----------: |
-| Balanced Logistic Regression |    **80.1%** |
-| Logistic Regression          |        54.5% |
-| KNN                          |        50.6% |
-| SVM                          |        50.2% |
-
-The **Balanced Logistic Regression** model achieved the best churn recall.
-
-### Final Model Performance
-
-* Churn Recall (5-Fold CV): **80.1%**
-* ROC-AUC: **0.841**
+* Churn Recall: **80.13%**
+* ROC-AUC: **0.84**
 * Test Accuracy: **74%**
 
-## Conclusion
-
-The balanced Logistic Regression model was selected as the final model because detecting customers who are likely to churn was the main objective of the project.
-
-Feature selection was also tested with KNN. Reducing the feature space from 45 to 10 features slightly improved accuracy but reduced churn recall, showing that feature selection does not always improve model performance.
-
-## Tools & Technologies
+## 🛠️ Technologies
 
 * Python
 * Pandas
 * NumPy
+* Scikit-learn
 * Matplotlib
 * Seaborn
+* Streamlit
+
+## 📂 Project Files
+
+* `Telco_Customer_Churn.ipynb` → Complete ML analysis
+* `app.py` → Streamlit application
+* `model.pkl` → Trained Machine Learning model
+* `scaler.pkl` → Feature scaler
+* `onehot_encoder.pkl` → One-hot encoder
+* `requirements.txt` → Required Python libraries
+
+## 🎯 Goal
+
+The goal of this project is to identify customers who are likely to churn, helping businesses take preventive actions and improve customer retention.
+
 * Scikit-learn
 * Jupyter Notebook
